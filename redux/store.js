@@ -1,9 +1,6 @@
-export const addTodo = (text) => ({
-  type: "ADD_TODO",
-  payload: { text },
-});
+import { createStore } from "redux";
+import rootReducer from "./reducer";
 
-export const deleteTodo = (id) => ({
-  type: "DELETE_TODO",
-  payload: { id },
-});
+const store = createStore(rootReducer);
+
+export default store;
