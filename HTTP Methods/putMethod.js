@@ -1,6 +1,6 @@
 //changes in the api
 fetch("https://jsonplaceholder.typicode.com/todos/", {
-  method: "POST",
+  method: "PUT",
   headers: { "content-type": "application/json" },
   body: JSON.stringify({
     userId: 6,
